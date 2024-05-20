@@ -275,8 +275,8 @@ def get_services(update: Update, context):
 
 # /get_repl_logs
 def get_repl_logs(update: Update, context):
-    # Команда для получения последних 25 записей логов репликации из Docker контейнера
-    command = 'cat /var/log/postgresql/postgresql-14-main.log | grep replica | tail -n 25'
+    # Команда для получения последних 20 записей логов репликации из Docker контейнера
+    command = 'cat /var/log/postgresql/postgresql-14-main.log | grep replica | tail -n 20'
     
     data = ssh_execute(host, username, password, port, command)   
     update.message.reply_text(clean_ssh_output(data))
