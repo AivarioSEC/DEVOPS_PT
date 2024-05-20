@@ -1,0 +1,30 @@
+myhosts:
+  hosts:  
+    host1:
+      ansible_host: 192.168.0.134
+      ansible_user: ansible
+      ansible_ssh_pass: ansible
+    host2:
+      ansible_host: 192.168.0.130 
+      ansible_user: ansible
+      ansible_ssh_pass: ansible
+  vars:
+    DB_REPL_HOST: 192.168.168.130 
+    DB_REPL_USER: replicator
+    DB_REPL_PASSWORD: Qq123456
+    DB_REPL_PORT: 5432
+    POSTGRES_VERSION: 14
+    DB_HOST: 192.168.0.134 
+    DB_PORT: 5432
+    DB_USER: postgres
+    DB_PASSWORD: Qq12345
+    DB_DATABASE: db_test
+    GIT: https://github.com/AivarioSEC/DEVOPS_PT.git
+    WORKDIR: /root/ansible  
+    TOKEN: 7158374202:AAFGzqir2TKWU9wsM6OsFcCeq5SwoYBgU-Y
+    RM_HOST: 192.168.0.134 
+    RM_PORT: 22 
+    RM_USER: ubuntu
+    RM_PASSWORD: ubuntu
+ 
+     
