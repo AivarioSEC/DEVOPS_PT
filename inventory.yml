@@ -1,25 +1,25 @@
 myhosts:
   hosts:  
     host1:
-      ansible_host: # ip car bot и db
-      ansible_user: # имя пользователя для ansible
-      ansible_ssh_pass: # пароль для ansible
+      ansible_host: 192.168.0.134 # ip car bot и db
+      ansible_user: ansible # имя пользователя для ansible
+      ansible_ssh_pass: ansible # пароль для ansible
     host2:
-      ansible_host: # ip db_repl
-      ansible_user: # имя пользователя для ansible
-      ansible_ssh_pass: # пароль для ansible
-  vars:
-    TOKEN:  # токен есть в notion .env
-    RM_HOST: # ip car bot и db
+      ansible_host: 192.168.0.130  # ip db_repl
+      ansible_user: ansible # имя пользователя для ansible
+      ansible_ssh_pass: ansible  # пароль для ansible
+    
+    TOKEN:  7158374202:AAFGzqir2TKWU9wsM6OsFcCeq5SwoYBgU-Y
+    RM_HOST: 192.168.0.134
     RM_PORT: 22 
-    RM_USER: # пользователь SSH
-    RM_PASSWORD: # пароль SSH
-    DB_HOST: # ip car bot и db
+    RM_USER: ubuntu
+    RM_PASSWORD: ubuntu
+    DB_HOST: 192.168.0.134
     DB_PORT: 5432
     DB_USER: postgres
-    DB_DATABASE: # название db
+    DB_DATABASE: db_test
     DB_PASSWORD: Qq12345
-    DB_REPL_HOST: # ip db_repl
+    DB_REPL_HOST: 192.168.0.130
     DB_REPL_USER: replicator
     DB_REPL_PASSWORD: Qq123456
     DB_REPL_PORT: 5432
